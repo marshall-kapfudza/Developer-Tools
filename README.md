@@ -2,7 +2,7 @@
 
 ### Overview
  
-A class with a method to return the length and longest words in a sentence. For example, “The cow jumped over the moon.” should return 6 and “jumped”.
+A class with a method to return the length and longest words in a sentence. For example, `“The cow jumped over the moon.”` should return `6 and “jumped”`.
 
 ### How to execute your tests
 - Created unit tests in `src/app.test.js` to test that method.
