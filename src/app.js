@@ -26,11 +26,16 @@ class MasterCard {
   onClick() {
     const val = document.getElementById('message').value;
     const long = new MasterCard(val)
-    document.getElementById('output').innerHTML = `<p><code>${long.str}</code></p><p><i>The longest word is:</i> <code>${long.longest()}</code></p>`;
+    if(val.length > 0){
+      document.getElementById('output').innerHTML = `<p><code>${long.str}</code></p><p><i>The longest word is:</i> <code>${long.longest()}</code></p>`;
+    }
+    else {
+      document.getElementById('output').innerHTML = 'You should put some content in your input field'
+    }
   }
 }
 
 const long = new MasterCard('The cow jumped over the moon.'); // 6 jumped
-const longs = new MasterCard('Java Tools Developer Exercise MasterCard'); // 6 jumped
+const longs = new MasterCard('Java Tools Developer Exercise MasterCard'); // 10 MasterCard
 console.log(long.longest());
 console.log(longs.longest());
